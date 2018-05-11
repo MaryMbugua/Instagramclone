@@ -1,37 +1,43 @@
+{% extends 'base.html' %}
 {% load bootstrap3 %}
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% block content %}
+{{block.super}}
+
+<style>
+.thisy{
+    padding-left: 15%;
+}
+hr{
+    background: #000000;
+}
+
+</style>
+
+<h1 class='text-center'>aaaarrrraa</h1> 
+<div class="container">
+
+
+<div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-10 thisy">
+          <div class="thumbnail">
+              <p>profile info</p>
+            <hr>
+            <p>image</p>
+
+            <img src="./static/icons/heart32.png" alt="Likes Icon" class="likey" >
+            <div class="caption">
+              <h3>caption</h3>
+              <p>comments go here</p>
+              <hr>
+              <p><a href="#" class="btn btn-primary" role="button">add a comment</a> </p>
+            </div>
+          </div>
+        </div>
+
+</div>
+</div>   
+  
+      
     
 
-
-    {% if title %}
-    <title>Instagram {{title}}</title>
-    {% else %}
-      <title> Instagram </title>
-    {% endif %}
-
-    {% block styles %}
-    {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-  {% endblock %}
-
-</head>
-<body>
-    
-
-    <h1 class='text-center'>Oyyyyyyaaaaaaaaa</h1> 
-
-
-
-
-    {% block scripts %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- {% bootstrap_javascript %}
 {% endblock %}
-</body>
-</html>

@@ -1,3 +1,39 @@
 h1{
     color: #dc34dc;
+    font-family: 'Indie Flower', cursive;
 }
+
+.container{
+    padding-top: 30px;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+.thisy{
+    padding-left: 30px;
+}
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Cabin', sans-serif; 
+
+
+
+Cabin
+
+regular 400
+regular 400 Italic
+medium 500
+medium 500 Italic
+semi-bold 600
+semi-bold 600 Italic
+bold 700
+bold 700 Italic
+Indie Flower
+
+regular 400
+Languages
+
+Latin (Supported by all Fonts)
+Latin Extended (Supported by Cabin)
+Vietnamese (Supported by Cabin)
+
+*/
