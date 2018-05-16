@@ -1,14 +1,12 @@
 from django.db import models
 import datetime as dt 
+from django.contrib.auth.models import User
 
 # Create your models here.
+class comments(models.Model):
+    content = models.CharField(max_length=60)
+    editor = models.ForeignKey(User)
 class Photo(models.Model):
-    baseurl = models.CharField(max_length=20)
-    url = models.CharField(max_length=255)
-    date_uploaded = models.DateTimeField(auto_now=True)
-    owner = models.CharField(max_length=20)
-    likes = models.IntegerField()
-    caption = models.CharField(max_length=140,default="")
-    tags = models.IntegerField(default=0)
-    main_colour = models.CharField(max_length=15,default="")
-    # article_image = models.ImageField(upload_to = 'articles/',blank=True)
+    image = models.ImageField(upload_to = 'images/',blank=True)
+   
+

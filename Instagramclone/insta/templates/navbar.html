@@ -13,64 +13,77 @@
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
   {% endblock %}
 
+<style>
+  .navy{
+    background-color: #ffffff;
+    padding-top: 30px;
+
+  }
+  h1{
+    color: #000000;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+</style>
+
+
+
+  
 </head>
 <body>
-  <div class=" navey container">
-    <div class="navey">
-  <nav class="navbar navbar-default navey">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        
-        <a href="#"><img src="./static/icons/black48.png" alt="Explore Icon" ></a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        
-        <li><a href="#">Instagram</a></li>
-        
-      </ul>
-
-       <!-- Adding a search form  -->
-      <div class="col-sm-4 col-md-4 navbar-centre "> 
-      <form class="navbar-form" role="search" action="">
-        
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="search">
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
-                  </div>
-        
-      </form>
-    </div><!-- search form end -->
-
-    <div class="nav navbar-nav navbar-right">
-      <li><a href="#"><img src="./static/icons/explore48.png" alt="Explore Icon" ></a></li>
-      <li class="">
-        <a href="#"><img src="./static/icons/like48.png" alt="Likes Icon" ></a>
-      </li>
-      <li class="">
-        <a href="#"><img src="./static/icons/profile48.png" alt="Likes Icon" ></a>
-      </li>
+  
+<div class="container navy">
+    
+    
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#"><img src="./static/icons/black48.png" alt="Instagram Icon" ></a>
+              
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           
+            
+             <!-- Adding a search form  -->
+            <div class="col-sm-4 col-md-4 navbar-centre "> 
+                <h1>Instagram</h1>
+            <form class="navbar-form" role="search" action="">
+              
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search" name="search">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                          </div>
+                        </div>
+              
+            </form>
+          </div><!-- search form end -->
+      
+          <div class="nav navbar-nav navbar-right">
+            <li><a href="#"><img src="./static/icons/explore48.png" alt="Explore Icon" ></a></li>
+            <li class="">
+              <a href="#"><img src="./static/icons/like64.png" alt="Likes Icon" ></a>
+            </li>
+            <li class="">
+              <a href="#"><img src="./static/icons/profile64.png" alt="Likes Icon" ></a>
+            </li>
+          </div>
+      
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </div>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-         
-</div> 
-</div>     
-              
-              
+                        
 
 
 
