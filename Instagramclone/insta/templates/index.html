@@ -18,13 +18,14 @@ hr{
 
 
 <div class="row">
+    {% for images_item in images %}
         <div class="col-sm-6 col-md-4 col-lg-10 thisy">
           <div class="thumbnail">
             <img src="" alt="Profile pic" srcset="" class="img-responsive img-circle">
               <h4>{{user.username}}</h4>
             <hr>
             <p>image
-                <img src="" alt="image" srcset="" class="img-responsive">
+                <img src="{{images_item.image.url}}" alt="image" srcset="" class="img-responsive">
             </p>
 
             <img src="./static/icons/likey.png" alt="Likes Icon" class="likey" >
@@ -36,7 +37,11 @@ hr{
             </div>
           </div>
         </div>
-
+        {% empty %}
+        <div class="row">
+          <h2 class="text-center">There No Posts</h2>
+        </div>
+        {% endfor %}
 </div>
 </div>   
   
